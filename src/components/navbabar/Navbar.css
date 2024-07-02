@@ -1,0 +1,148 @@
+nav {
+    height: 60px;
+    width: 100%;
+    /* background-color: red; */
+    display: inline-block;
+    /* position: fixed; */
+    /* background-color: #0c0c1d;  */
+    /* background: linear-gradient(100deg, #0c0c1d , #111132);   */
+    font-family: "Dm Sans";
+}
+nav ul {
+    float: right;
+    align-items: end;
+    margin-right: 40px;
+
+}
+nav li{
+    
+    font-size: 20px;
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    /* margin-bottom: 10px; */
+    line-height: 50px;
+    
+}
+nav a {
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    color: lightgray;
+    padding: 7px 10px;  
+    
+}
+a::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 0.8px;
+    width: 0;
+    left: 0;
+    bottom: -0px;
+    transition: 0.3s;
+}
+
+a .active  , a:hover{
+ color: white;
+ 
+}
+a:hover::after{
+    width: 100%;
+}
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: lightgray;
+    padding: 0 15px;
+    line-height: 50px;
+    /* position: sticky; */
+    
+   
+}
+.logo:hover{
+    color: pink;
+}
+.logo:hover{
+   span {color: lightgray;}
+    
+}
+nav .logo span {
+    color: pink;
+}
+nav .icon {
+    z-index: 1500;
+    color: lightgray;
+    font-size: 30px;
+    line-height: 50px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    background-color: black;
+    
+}
+nav .icon:hover{
+    color: white;
+    
+}
+
+
+@media (max-width: 1048px) {
+
+    nav .logo {
+        font-size: 32px;
+        padding-left: 30px;
+    
+    
+    }
+    nav ul {
+        margin-right: 20px;
+    }
+    nav a {
+        font-size: 17px;
+    }
+}
+@media (max-width: 909px) {
+
+
+ nav .icon {
+    
+    top: 10px;
+    right: 0;
+    display: flex;
+    position:fixed; 
+    background-color: transparent;
+    
+    color: white;
+ }
+
+ nav ul {
+    position: fixed;
+    width: 60%;
+    height: 100vh;
+    top:0px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    background-color: #0c0c1d;
+    /* bc */
+    z-index: 1200;
+    
+
+ }
+ nav li {
+    display:block;
+    margin: 50px 0;
+    line-height: 30px;
+ }
+ nav a {
+    font-size: 20px;
+    display: inline-block;
+      /* mmmmmmmmm */
+ } 
+ nav ul.show{
+    left: 0; 
+    /* ----- */
+ }
+}

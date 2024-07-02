@@ -1,0 +1,46 @@
+/* *{background-color: #0c0c1d; */
+ *{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans" , sans-serif;
+}
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;  
+  
+}
+body {
+  background-color: #0c0c1d;
+  color: lightgray;
+  /* position: relative; */
+}
+.a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: center;
+  /* overflow: hidden; */
+  
+}
+/* eeeee
+
+
+  @media (max-width: 738px){
+    
+  }
+
+  @media (max-width: 1024px){
+    
+  }
+
+  @media (max-width: 1366px){
+  
+  }
+
+
+  eee */

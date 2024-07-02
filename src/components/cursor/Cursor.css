@@ -1,0 +1,9 @@
+.cursor {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: fixed;
+    z-index: 999;
+    transition: all linear 0.2s;
+}

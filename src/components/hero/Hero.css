@@ -1,0 +1,126 @@
+.hero {
+    height: calc(100vh - 60px);
+    background: linear-gradient(100deg, #0c0c1d , #111132);
+    overflow: hidden;
+    position: relative;
+    font-family: "Dm Sans";
+    display: flex;
+
+.wrapper {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;  
+
+.textContainer {
+    margin-left: 4%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+
+ @media (max-width: 1325px){
+       gap: 15px; 
+       /* margin-left: 20px; */
+    }
+
+    @media (max-width: 1190px){
+        gap: 10px;
+    }
+
+    @media (max-width: 738px){
+    height: 50%;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin-left: unset;
+    }
+
+   
+h2 {
+   font-size: 30px;
+   color: rebeccapurple;
+   letter-spacing: 10px; 
+}
+
+h1{
+    font-size: 88px;
+
+    @media (max-width: 1325px){
+        font-size: 78px; 
+     }
+
+     @media (max-width: 1190px){
+        font-size: 65px;
+     }
+     
+    @media (max-width: 738px) {
+        font-size: 36px;
+    }    
+}
+  #buttons {
+    button{
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: 300;
+    }
+ }
+  }
+  
+}
+.imgContainerr{
+    height: 100%;
+    /* width: 600px; */
+    position: absolute;
+    top: 0;
+    right: 0;
+   
+    @media (max-width : 1325px){
+    margin-right: -50px;
+    }
+    @media (max-width: 1190px){
+        margin-right: -70px;
+     }
+   @media (max-width : 738px){
+       height: 50%;
+       width: 100%;
+       top: unset;
+       bottom: 0;   
+       margin-right: unset;  
+   }
+
+   img{
+    width: 100%;
+    height:100%;
+    object-fit: contain;     
+}
+}
+.slidingText {
+    position: absolute;
+    white-space: nowrap;
+    top: -60px;
+    font-size: 50vh;
+    color: #ffffff09;
+    font-weight: bold; 
+    
+        @media (max-width : 738px){
+        position: absolute;
+        font-size: 50vh;
+        bottom:-120px;
+        top: unset;
+        white-space: nowrap;
+        color: #ffffff09;
+        width: 50%;
+        font-weight: bold;   
+    }
+    }
+}
+
+
